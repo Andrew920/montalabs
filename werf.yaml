@@ -1,7 +1,10 @@
 # werf.yaml
 project: montalabs
 configVersion: 1
-defaultRepo: harbor.mymemorylog.com/montalabs
+
+build:
+  platform: linux/amd64
+
 ---
 image: montalabs
 dockerfile: Dockerfile
