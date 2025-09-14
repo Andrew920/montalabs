@@ -1,0 +1,7 @@
+# werf.yaml
+project: montalabs
+configVersion: 1
+---
+image: montalabs
+dockerfile: Dockerfile
+target: .
