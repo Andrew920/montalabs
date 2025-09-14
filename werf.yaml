@@ -8,6 +8,3 @@ build:
 ---
 image: montalabs
 dockerfile: Dockerfile
-shell:
-  beforeCommand:
-    - export WERF_REPO=harbor.mymemorylog.com/test
