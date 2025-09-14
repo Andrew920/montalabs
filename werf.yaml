@@ -3,7 +3,7 @@ project: montalabs
 configVersion: 1
 
 build:
-  platform: linux/amd64
+  platform: [ linux/amd64 ]
 
 ---
 image: montalabs
