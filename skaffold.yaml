@@ -1,0 +1,13 @@
+apiVersion: skaffold/v4beta7
+kind: Config
+metadata:
+  name: montalabs
+build:
+  tagPolicy:
+    gitCommit:
+      variant: CommitSha
+  artifacts:
+    - image: harbor.mymemorylog.com/montalabs/montalabs
+      platforms: ["linux/amd64"]
+      docker:
+        dockerfile: Dockerfile
