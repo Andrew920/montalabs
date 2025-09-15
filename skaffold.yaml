@@ -8,6 +8,6 @@ build:
       variant: CommitSha
   artifacts:
     - image: harbor.mymemorylog.com/montalabs/montalabs
-      platforms: ["linux/amd64", "linux/arm64"]
+      platforms: ["linux/arm64"]
       docker:
         dockerfile: Dockerfile
