@@ -15,3 +15,11 @@ build:
     useBuildkit: true
     push: true
     useDockerCLI: true
+  
+  profiles:
+  - name: ci
+    build:
+      artifacts:
+        - image: harbor.mymemorylog.com/montalabs/montalabs
+          custom:
+            buildCommand: ./skaffold-build.sh
