@@ -19,6 +19,10 @@ build:
 profiles:
   - name: ci
     build:
+      tagPolicy:
+        gitCommit:
+          variant: CommitSha
+          ignoreChanges: true
       artifacts:
         - image: harbor.mymemorylog.com/montalabs/montalabs
           custom:
