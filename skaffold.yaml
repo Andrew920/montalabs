@@ -16,7 +16,7 @@ build:
     push: true
     useDockerCLI: true
   
-  profiles:
+profiles:
   - name: ci
     build:
       artifacts:
